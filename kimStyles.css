@@ -23,6 +23,7 @@ h5 {
 }
 
 .buttons {
+    position: relative;
     display: inline-block;
     width: 8%;
     height: 40%;
@@ -30,4 +31,5 @@ h5 {
     border-radius: 150px;
     margin-left: -30px;
     margin-right: 50px;
+    bottom: 30px;
 }
