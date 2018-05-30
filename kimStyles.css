@@ -3,6 +3,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
 }
 
 /* Header consists of the logo, main page, search bar */
@@ -47,7 +55,6 @@ body {
     padding-left: 30px;
     height: 35px;
     border: solid #4A0D66 5px;
-
 }
 
 .mainpage, .search p {
@@ -85,6 +92,7 @@ body {
     height: 50px;
 }
 
+/*Starting Image*/
 .firstImg {
     background-image: url(kimImages/joinUs.jpg);
     background-repeat: no-repeat;
@@ -92,6 +100,47 @@ body {
     height: 400px;
     width: 100%;
 }
+
+/*Give Section with Donate and Volunteer sections*/
+.Give {
+    height: 800px;
+    width: 100%;
+    background-color: #A685A8;
+}
+
+.giveImg {
+    display: inline-block;
+    background-image: url(kimImages/heart.png);
+    background-size: contain;
+    height: 100px;
+    width: 100px;;
+    margin: 48px 20px 250px 40px;
+}
+
+.Title {
+    vertical-align: top;
+    display: inline-block;
+    height: 10%;
+    width: 11%;
+    margin-top: 65px;
+}
+
+.filler {
+    display: inline-block;
+    height: 200px;
+    width: 77.71%;
+    vertical-align: top;
+    background-color: blue;
+}
+
+.Donate {
+/*    display: inline-block;*/
+    height: 400px;
+    width: 600px;
+    background-color:red;
+/*    vertical-align: top;*/
+}
+
 
 
 
