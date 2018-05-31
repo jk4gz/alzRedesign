@@ -5,10 +5,9 @@ body {
     font-family: 'Robot', sans-serif;
 }
 h1 {
-    font-size: 36;
+    font-weight: bold;
 }
 h2 {
-    font-size: 24;
     font-family: 'PT Serif';
     font-style: italic;
 }
@@ -72,11 +71,21 @@ img {
 
 
 /* Menu */
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #BB6BD9;
+}
 .menubar {
     background-color: #4A0D66;
     width: 100%;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .menu {
     display: flex;
@@ -143,11 +152,11 @@ img {
 }
 .overlay h1 {
     margin-bottom: 2%;
-    font-size: 50;
+    font-size: 45;
 }
 .overlay h2 {
     margin-top: 0;
-    font-size: 36;
+    font-size: 35;
 }
 
 /* Section Defaults & Background */
@@ -164,7 +173,6 @@ img {
 }
 .section_head {
     grid-column: 1 / 3;
-    border: solid pink 3px;
     display: flex;
     flex-direction: row;
 }
@@ -180,13 +188,13 @@ img {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 500px;
-    padding-top: 6%;
+    height: 600px;
+    padding-top: 10%;
     background-color: #A685A8;
 }
 #s1 img {
-    height: 80px;
-    width: 80px;
+    height: 150px;
+    width: 150px;
 }
 #s1 h1 {
     margin-bottom: 0px;
@@ -204,20 +212,31 @@ img {
     grid-gap: 10px;
     width: 90%;
     height: 80%;
-    border: solid green 3px;    
 }
 .s2content1 {
     grid-column: 1 / span 1;
-    border: solid pink 3px;
     text-align: center;
+    margin-right: 5%;
 }
 .s2content2 {
     grid-column: 2 / span 1;
-    border: solid pink 3px;
     text-align: center;
+    margin-left: 5%;
 }
 .s2contentbox p {
     font-size: 24;  
+}
+.s2c1heading img, .s2c2heading img {
+    height: 80px;
+    width: 80px;
+}
+.s2content1 p, .s2content2 p {
+    text-align: left;
+    font-size: 30;
+    margin-top: 5%;
+}
+.s2c1heading h2, .s2c2heading h2 {
+    font-size: 36;
 }
 
 /* Section 3 */
@@ -240,7 +259,6 @@ img {
 .s3contentbox {
     width: 90%;
     height: 80%;
-    border: solid green 3px;
     display: flex;
     flex-direction: column;
     position: relative;
