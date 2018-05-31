@@ -169,7 +169,7 @@ span {
     margin-right: 25px;
 }
 
-.giveSubHeader {
+.subHeader {
     height: 15%;
     width: 100%;
 }
@@ -182,8 +182,8 @@ span {
     display: inline-block
 }
 
-.giveSubHeadTitle {
-    width: 45%;
+.subHeadTitle {
+    width: 70%;
     height: 100%;
     display: inline-block;
     vertical-align: top;
@@ -191,10 +191,32 @@ span {
 
 /*The Advocate Section*/
 .Advocate {
-    height: 800px;
+    height: 750px;
     width: 100%;
     background-color: #3E1149;
 }
+
+.advocateImg {
+    background-image: url(kimImages/delegation.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 60%;
+    width: 44%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.advocateText {
+    display: inline-block;
+    vertical-align: top;
+    height: 60%;
+    width: 25%;
+    margin-left: 7%;
+}
+
+/*Events Section*/
+
+
 
 
 
