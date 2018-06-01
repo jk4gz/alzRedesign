@@ -8,58 +8,112 @@
 
 <body>
 <header>
-	<div class="logo"><img src="images/LOGO.jpg" class="logoimage"/><br>
-	<div class="logotext">Central and Western Virginia</span></div></div>
-	<div class="mainpage">Main Page</div>
-	<div class="searchbar">Search</div></div>
-	<div class="navbar"><ul class=menulist>
-		<li class="menupoint"><a href="https://www.alz.org/cwva/" class="toplink">Home</a></li>
-		<li class="menupoint"><a href="https://www.alz.org/cwva/in_my_community_about.asp" class="toplink">About Us</a></li>
-		<li class="menupoint"><a href="https://www.alz.org/alzheimers_disease_1973.asp" class="toplink">Alzheimer's Disease</a></li>
-		<li class="menupoint" class="toplink"><a href="https://www.alz.org/join_the_cause_join_the_cause.asp" class="toplink">Get Involved</a></li>
-		<span class="donatebutton" class="toplink"><li><a href="https://act.alz.org/site/Donation2?df_id=32112&mfc_pref=T&32112.donation=form1&" class="toplink">Donate</a></li></ul></span></div>
+	        <div class="navbar">
+            <div class="nav">
+                <div class="header">
+                    <div class="logo">
+                        <img src="images/LOGO.jpg" alt="">
+                        <div class="logotext">Central and Western Virginia</div>
+                    </div>
+                    <div class="mainpage">
+                        <a href="https://www.alz.org/"><p>Main Page</p></a>
+                    </div>
+                    <div class="search">
+                        <form action="/action_page.php">
+                            <input type="text" id="searchbar" placeholder="Search...">
+                            <button type="submit">
+                            <i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="menubar">
+            <div class="menu">
+                <div class="menuitem"><p><a href="">Home</a></p></div>
+                <div class="menuitem"><p><a href="">About Us</a></p></div>
+                <div class="menuitem"><p><a href="">Alzheimer's Disease</a></p></div>
+                <div class="menuitem"><p><a href="index.html">Involved</a></p></div>
+                <div class="menuitem" id="donate"><p><a href="">Donate</a></p></div>
+            </div>
+        </div>
 	<div class="banner"><img src="images/banner.png" class="banner"></div>
 </header>
+<!-- ABOUT ALZHEIMER'S SECTION -->
 	<div class="about">
 		<div class="title">
-			<img src="images/abouticon.png" class="icon"/><div class="titletext">What is Alzheimer's Disease?</span></div></div>
-			<div class ="whatis"><div class="videoWrapper"><iframe width="800" height="450" align="middle" src="https://www.youtube.com/embed/aa31GC_T6iU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			<ul class ="aboutlist">
-				<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_diagnosis.asp" class="toplink">Diagnosis</a></li>
-				<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_stages_of_alzheimers.asp" class="toplink">Stages</a></li>
-				<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_treatments.asp" class="toplink">Treatment</a></li>
-				<li class="aboutlistitem"><a href="https://www.alz.org/braintour/3_main_parts.asp"  class="toplink">Brain Tour</a></li>
-			</ul></div></div></div>
-
+			<img src="images/abouticon.png" class="icon"/>
+			<div class="titletext">What is Alzheimer's Disease?
+			</div>
+		</div>
+		<div class ="whatis">
+			<div class="videoWrapper"><iframe width="800" height="450" align="middle" src="https://www.youtube.com/embed/aa31GC_T6iU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<ul class ="aboutlist">
+					<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_diagnosis.asp" class="toplink">Diagnosis</a></li>
+					<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_stages_of_alzheimers.asp" class="toplink">Stages</a></li>
+					<li class="aboutlistitem"><a href="https://www.alz.org/alzheimers_disease_treatments.asp" class="toplink">Treatment</a></li>
+					<li class="aboutlistitem"><a href="https://www.alz.org/braintour/3_main_parts.asp"  class="toplink">Brain Tour</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- MAIN COMMUNITY SECTION -->
 	<div class="community">
 		<div class="title">
-			<img src="images/communityicon.png" class="icon"/><div class="titletext">Community</span></div></div> 
-		<div class="localnews"><img src="images/blueridge.jpg" class="communityimage1"/><div class="localnewstitle">Local News</div>
-			<div class="localnewstext"><div class="localnewstitletext"><h3>Latest News From Our Chapter</h3><ul class="communityul">
-				<li class="communityli"><a href="" class="communitylink">Upcoming Events</a></li>
-				<li class="communityli"><a href="" class="communitylink">Support Group Meetings</a></li>
-				<li class="communityli"><a href="" class="communitylink">New Resources</a></li>
-			</div></div></div>
-		<div class="mostvisitedpages">
-			<div class="mostvisitedtext"><h3>Most Visited Pages</h3>
-			<ul class="communityul"><li class="communityli"><a href="https://www.alz.org/alzheimers_disease_10_signs_of_alzheimers.asp?type=alzFooter" class="communitylink">10 Warning Signs and Symptoms</a></li>
-			<li class="communityli"><a href="https://www.alz.org/what-is-dementia.asp" class="communitylink">What is Dementia?</a></li>
-				<li class="communityli"><a href="https://www.alz.org/library/index.asp?type=alzFooter" class="communitylink">Virtual Library</a></li></ul></div><img src="images/mostvisited.jpg" class="communityimage2"/>
-				<div class="mostvisitedtitle">Most Visited</div>
+			<img src="images/communityicon.png" class="icon"/>
+				<div class="titletext">Community
+				</div>
+		</div> 
+		<div class="localnews">
+			<img src="images/blueridge.jpg" class="communityimage1"/><div class="localnewstitle">Local News</div>
+			<div class="localnewstext">
+				<div class="localnewstitletext"><h3>Latest News From Our Chapter</h3>
+					<ul class="communityul">
+						<li class="communityli"><a href="" class="communitylink">Upcoming Events</a></li>
+						<li class="communityli"><a href="" class="communitylink">Support Group Meetings</a></li>
+						<li class="communityli"><a href="" class="communitylink">New Resources</a></li>
+				</div>
+			</div>
 		</div>
-				<div class="localnews"><img src="images/researchlab.jpg" class="communityimage1"/><div class="localnewstitle">Current Research</div>
-			<div class="localnewstext"><div class="localnewstitletext"><h3>Current Research</h3><ul class="communityul">
-				<li class="communityli"><a href="http://research.vtc.vt.edu/focus_area/cognitive_computational_neuroscience/" class="communitylink">V-Tech Research</a></li>
-				<li class="communityli"><a href="https://neurosciences.uvahealth.com/services/alzheimers-memory-disorders" class="communitylink">UVA Research</a></li>
-				<li class="communityli"><a href="http://www.jmu.edu/sponsoredprograms/funding-opportunities/search/2018/research-on-informal-and-formal-caregiving-for-alzheimers-disease-r21.shtml" class="communitylink">JMU Research</a></li>
-			</div></div></div>
+		<div class="mostvisitedpages">
+			<div class="mostvisitedtext">
+				<h3>Most Visited Pages</h3>
+			<ul class="communityul">
+				<li class="communityli"><a href="https://www.alz.org/alzheimers_disease_10_signs_of_alzheimers.asp?type=alzFooter" class="communitylink">10 Warning Signs and Symptoms</a></li>
+				<li class="communityli"><a href="https://www.alz.org/what-is-dementia.asp" class="communitylink">What is Dementia?</a></li>
+				<li class="communityli"><a href="https://www.alz.org/library/index.asp?type=alzFooter" class="communitylink">Virtual Library</a></li></ul>
+			</div>
+			<img src="images/mostvisited.jpg" class="communityimage2"/>
+				<div class="mostvisitedtitle">Most Visited
+				</div>
+		</div>
+		<div class="localnews">
+			<img src="images/researchlab.jpg" class="communityimage1"/>
+			<div class="localnewstitle">Current Research
+			</div>
+			<div class="localnewstext">
+				<div class="localnewstitletext"><h3>Current Research</h3><ul class="communityul">
+					<li class="communityli"><a href="http://research.vtc.vt.edu/focus_area/cognitive_computational_neuroscience/" class="communitylink">V-Tech Research</a></li>
+					<li class="communityli"><a href="https://neurosciences.uvahealth.com/services/alzheimers-memory-disorders" class="communitylink">UVA Research</a></li>
+					<li class="communityli"><a href="http://www.jmu.edu/sponsoredprograms/funding-opportunities/search/2018/research-on-informal-and-formal-caregiving-for-alzheimers-disease-r21.shtml" class="communitylink">JMU Research</a></li>
+				</div>
+			</div>
+		</div>
 	</div>
-
+<!-- BOTTOM COMMUNITY SECTION -->
 <div class="community2"><div class="square-container">
 
  <div class="square">
-    <div class="content spread"><div class="participate"><div class="bottomtitle"><div class="bottomtitletext"><img src="images/participate.png" class="subicon"/><h3>Participate</h3></div></div>
-		<ul class="communityul"><li class="communityli"><a href="https://www.alz.org/cwva/in_my_community_participate.asp" class="communitylink">Research Studies in Virginia</a></li>
+    <div class="content spread">
+    	<div class="participate">
+    		<div class="bottomtitle">
+    			<div class="bottomtitletext">
+    				<img src="images/participate.png" class="subicon"/><h3>Participate</h3>
+    			</div>
+    		</div>
+		<ul class="communityul">
+			<li class="communityli"><a href="https://www.alz.org/cwva/in_my_community_participate.asp" class="communitylink">Research Studies in Virginia</a></li>
 			<li class="communityli"><a href="https://www.alz.org/cwva/in_my_community_participate.asp" class="communitylink">Walk to End Alzheimer's</a></li>
 			<li class="communityli"><a href="https://www.alz.org/cwva/in_my_community_15368.asp" class="communitylink">Volunteer Locally</a></li>
 		</ul></div>
@@ -67,25 +121,91 @@
   </div>
 
   <div class="square">
-    <div class="content spread"><div class="celebvideo"><iframe width="560" height="315" src="https://www.youtube.com/embed/opWheO4Df9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <div class="content spread">
+    	<div class="celebvideo">
+    		<iframe width="560" height="315" src="https://www.youtube.com/embed/opWheO4Df9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    	</div>
     </div>
   </div>
 
   <div class="square">
-    <div class="content column"><div class="statistics"><img src="images/infographic.jpg" class="info"/></div>
+    <div class="content column">
+    	<div class="statistics">
+    		<img src="images/infographic.jpg" class="info"/>
+    	</div>
     </div>
   </div>
 
   <div class="square">
-    <div class="content spread"><div class="advocate"><div clas="bottomtitle"><div class="bottomtitletext"><h3>Advocate</h3><img src="images/askcongress.png" class="subicon"/></div>
-	<a href="http://act.alz.org/site/PageServer?pagename=advocacy_action&scid=1794" class="communitylink">Ask Congress to Increase Alzheimer's Research Funding</a><br>
-		<p>Alzheimer’s is the only leading cause of death in America without a way to prevent, cure, or even slow its progression. What’s more. Alzheimer’s is the most expensive disease in America. <a href="https://www.alz.org/advocacy/take-action.asp" class="readmore">More...</a></p></div></div></div>
+    <div class="content spread">
+    	<div class="advocate">
+    			<div clas="bottomtitle">
+    				<div class="bottomtitletext">
+    					<h3>Advocate</h3><img src="images/askcongress.png" class="subicon"/></div>
+							<a href="http://act.alz.org/site/PageServer?pagename=advocacy_action&scid=1794" class="communitylink">Ask Congress to Increase Alzheimer's Research Funding</a><br>
+								<p class="advocatetext">Alzheimer’s is the only leading cause of death in America without a way to prevent, cure, or even slow its progression. What’s more. Alzheimer’s is the most expensive disease in America. <a href="https://www.alz.org/advocacy/take-action.asp" class="readmore">More...</a></p>
+					</div>
+				</div>
+			</div>
     </div>
   </div>
   </div>
 
 </div></div>
+        <div class="footer">
+            <div class="boxes">
+                <div class="box">
+                    <div class="ftitle">Home</div>
+                    <div class="flist">
+                        <ul>
+                            <li>What is Alzheimer's Disease?</li>
+                            <li>Community</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="ftitle">About Us</div>
+                    <div class="flist">
+                        <ul>
+                            <li>Contact Us</li>
+                            <li>Your Local Chapter</li>
+                            <li>National Resources</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="ftitle">Alzheimer's Disease</div>
+                    <div class="flist">
+                        <ul>
+                            <li>About Alzheimer's</li>
+                            <li>Life with Alzheimer's</li>
+                            <li>Research</li>
+                            <li>2018 Conference</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="ftitle">Join the Cause</div>
+                    <div class="flist">
+                        <ul>
+                            <li>Special Events</li>
+                            <li>Host an Event</li>
+                            <li>Volunteer</li>
+                            <li>Donate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="social_media">
+                    <img src="aboutImages/facebook.png" alt="">
+                    <img src="aboutImages/twitter.png" alt="">
+                    <img src="aboutImages/youtube.png" alt="">
+                </div>
+                <p> 24/7 Helpline: 1.800.272.3900   |   355 Rio Rd W Suite 102, Charlottesville, VA 22901</p>
+            </div>
 
+        </div> 
 </body>
 
 </html>

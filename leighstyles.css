@@ -8,18 +8,7 @@ h2 {
 	}
 header. {
 	}
-.logo {
-	width: 286px;
-	height: auto;
-	position: relative;
-	margin: 25px 25px;
-}
-.logoimage {
-	width: 286px;
-	height: auto;
-	text-align: center;
-	}
-.logotext {
+	.logotext {
 	color: #64388F;
 	font-size: 18px;
 	font-style: bold;
@@ -27,72 +16,151 @@ header. {
 	text-align: center;
 	padding-top: 10px;
 }
-.buttons {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.mainpage {
-	position: absolute;
-	right: 175px;
-	top: 5%;
-	border: 5px solid #64388F;
-	border-radius: 100px;
-	padding: 10px;
-	height: 20px;
-	width: 90px;
-	text-align: center;
-	color: #64388F;
-}
-.searchbar {
-	position: absolute;
-	right: 25px;
-	top: 5%;
-	border: 5px solid #64388F;
-	border-radius: 100px;
-	padding: 10px;
-	height: 20px;
-	width: 90px;
-	color: #64388F;
-}
-.menulist {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-.menupoint {
-	display: inline-block;
-	padding: 5px 100px
-}
+/*Nav Bar*/
 .navbar {
-	width: 100%;
-	background-color: #4A0D66;
-	display: inline-block;
-	font-size: 20px;
-	font-style: bold;
-	padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.donatebutton {
-	display:inline-block;
-	background-color: #BB6BD9;
-	padding: 10px;
-	border-radius:100px;
+.nav {
+    width: 90%;
 }
-.toplink {
-	text-decoration: none;
-	color: white;
+
+/* Header consists of the logo, main page, search bar */
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0px 10px 0px;
+    font-size: 18;
 }
-.toplink:hover {
-	color: #359A8E;
-	text-decoration: underline;
+.header a {
+    color: #4A0D66;
+    text-decoration: none;
+    transition: color 0.3s. ease-in-out;
 }
+.header a:hover {
+    color: #BB6BD9;
+}
+
+.logo {
+    margin-right: auto;
+}
+.logo img {
+    width: 370px;
+    height: auto;
+}
+
+.mainpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1%;
+}
+.mainpage, .search {
+    border-radius: 1000px;
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 35px;
+    border: solid #4A0D66 5px;
+
+}
+.mainpage, .search p {
+    color: #4A0D66;
+    transition: color 0.3s ease-in-out;
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 10%;
+}
+.search p {
+    margin-right: 6px;
+}
+#searchbar {
+    font-size: 18;
+}
+.search input#searchbar {
+    border: none;
+    color: #4A0D66;
+    width: 80%;
+}
+.search button {
+    color: #4A0D66;
+    width: 20%;
+    background: #FFFFFF;
+    border: none;
+}
+.search button:hover {
+    color: #BB6BD9;
+}
+.search input:focus {
+    outline: none;
+}
+form {
+    margin: 0;
+}
+
+
+/* Menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.13s ease-in-out; /*Added transition*/
+}
+.menu a:hover {
+    color: #BB6BD9;
+}
+.menubar {
+    background-color: #4A0D66;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20;
+    font-weight: bold;
+    height: 65px;
+    width: 90%;
+}
+.menuitem {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#donate {
+    background-color: #BB6BD9;
+    border-radius: 100px;
+    padding-right: 70px;
+    padding-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 50px;
+}
+#donate a:hover {
+    color: #4A0D66;
+}
+
 .banner {
 	background: #3E1149;
 	width: 100%;
 	height: auto;
 	padding: 10px 0;
-}
+	}
+/*ABOUT ALZHEIMER'S SECTION*/
 .about {
 	background-color: #A685A8;
 	width: 100%;
@@ -120,6 +188,15 @@ header. {
 	width: 90%;
 	margin: auto 0;
 }
+.toplink {
+	text-decoration: none;
+	color: white;
+}
+.toplink:hover {
+	color: #359A8E;
+	text-decoration: underline;
+}
+/*VIDEO RESPONSIVENESS*/
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -133,6 +210,7 @@ header. {
 	width: 75%;
 	height: 75%;
 }
+/*BUTTONS BELOW VIDEO*/
 .aboutlist {
     list-style-type: none;
     position: absolute;
@@ -154,6 +232,7 @@ header. {
 	font-size: 26px;
 	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 }
+/*MAIN COMMUNITY SECTION*/
 
 .community {
 	background-color: #3E1149;
@@ -205,6 +284,7 @@ h3 {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
+/*APPLIES THROUGHOUT COMMUNITY AND BOTTOM COMMNUNITY*/
 .communityul {
 	list-style: none;
 	padding: 0;
@@ -223,7 +303,6 @@ h3 {
 .communitylink:hover {
 	text-decoration: underline;
 }
-
 .mostvisitedpages {
 	margin: 2.5% auto;
 	position: relative;
@@ -266,6 +345,7 @@ h3 {
 	width: 500px;
 	height: 500px;
 }
+/*BOTTOM COMMUNITY SECTION*/
 .community2 {
 	background-color: #A685A8;
 	width: 100%;
@@ -277,8 +357,9 @@ h3 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	width: 90%;
+	margin: 0 auto;
 }
-
 .square .content {
 	  position: absolute;
 	  top: 0; left: 0;
@@ -286,20 +367,18 @@ h3 {
 	  width: 100%;
 }
 .square {
-		background-color: white;
+	background-color: white;
 	  position: relative;
-	  flex-basis: calc(35%);
-	  margin: 20px;
+	  flex-basis: calc(45%);
+	  margin: 15px;
 	  border: none;
 	  box-sizing: border-box;
 }
-
 .square::before {
   content: '';
   display: block;
   padding-top: 100%;
 }
-
 .participatetitle {
 	padding: 15px
 	padding-right: 14px;
@@ -345,4 +424,58 @@ h3 {
 }
 .bottomtitletext {
 	margin-left: 10px;
+}
+.advocatetext {
+	font-size: 22px;
+	padding: 0;
+}
+/* Footer */
+.footer {
+    background-color: #3E1149;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    margin-top: 2%;
+}
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+.ftitle {
+    font-weight: bold;
+    font-size: 18;
+    margin-bottom: 5%;
+}
+.flist ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14;
+}
+.flist li {
+    list-style: none;
+    margin-bottom: 2%;
+}
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    font-size: 18;
+}
+.social_media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10%;
+}
+.social_media {
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
 }
