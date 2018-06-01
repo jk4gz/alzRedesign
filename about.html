@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="about.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div class="navbar">
@@ -14,11 +15,15 @@
                         <img src="aboutImages/fulllogo.PNG" alt="">
                     </div>
                     <div class="mainpage">
-                        <p>Main Page</p>
+                        <a href="https://www.alz.org/"><p>Main Page</p></a>
                     </div>
                     <div class="search">
-                        <p>Search</p>
-                        <img src="aboutImages/magnifying-glass.png" style="width: 15px; height: 15px;">
+                        <form action="/action_page.php">
+                            <input type="text" id="searchbar" placeholder="Search...">
+                            <button type="submit">
+                            <i class="fa fa-search"></i></button>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -26,11 +31,11 @@
         </div>
         <div class="menubar">
             <div class="menu">
-                <div class="menuitem"><p>Home</p></div>
-                <div class="menuitem"><p>About Us</p></div>
-                <div class="menuitem"><p>Alzheimer's Disease</p></div>
+                <div class="menuitem"><p><a href="">Home</a></p></div>
+                <div class="menuitem"><p><a href="">About Us</a></p></div>
+                <div class="menuitem"><p><a href="">Alzheimer's Disease</a></p></div>
                 <div class="menuitem"><p><a href="index.html">Involved</a></p></div>
-                <div class="menuitem" id="donate"><p>Donate</p></div>
+                <div class="menuitem" id="donate"><p><a href="">Donate</a></p></div>
             </div>
         </div>
         <div class="banner">
@@ -91,19 +96,19 @@
             <div class="s4contentbox">
                 <div class="s4content" id="s4content1">
                     <div class="s4pic"><img src="aboutImages/research.png" alt=""></div>
-                    <div class="s4text"><h1>VA Facts and Figures</h1></div>
+                    <div class="s4text"><h1><a href="https://alz.org/cwva/documents/ALZ_FandFStateSheets18__Virginia.pdf">VA Facts and Figures</a></h1></div>
                 </div>
                 <div class="s4content">
                     <div class="s4pic"><img src="aboutImages/planning.png" alt=""></div>
-                    <div class="s4text"><h1>Strategic Plan</h1></div>
+                    <div class="s4text"><h1><a href="https://alz.org/cwva/documents/fy15-17_strategic_plan.pdf">Strategic Plan</a></h1></div>
                 </div>
                 <div class="s4content" id="s4content3">
                     <div class="s4pic"><img src="aboutImages/growth.png" alt=""></div>
-                    <div class="s4text"><h1>Financial Information</h1></div>
+                    <div class="s4text"><h1><a href="https://www.alz.org/annual_report/overview.asp">Financial Information</a></h1></div>
                 </div>
                 <div class="s4content">
                     <div class="s4pic"><img src="aboutImages/brainstorm.png" alt=""></div>
-                    <div class="s4text"><h1>Board of Directors</h1></div>
+                    <div class="s4text"><h1><a href="https://alz.org/cwva/in_my_community_about.asp">Board of Directors</a></h1></div>
                 </div>
             </div>
 
