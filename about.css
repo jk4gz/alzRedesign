@@ -42,6 +42,7 @@ a {
 .header a {
     color: #4A0D66;
     text-decoration: none;
+    transition: color 0.3s. ease-in-out;
 }
 .header a:hover {
     color: #BB6BD9;
@@ -71,6 +72,7 @@ a {
 }
 .mainpage, .search p {
     color: #4A0D66;
+    transition: color 0.3s ease-in-out;
 }
 .search {
     display: flex;
@@ -112,6 +114,7 @@ form {
 .menu a {
     color: white;
     text-decoration: none;
+    transition: color 0.13s ease-in-out; /*Added transition*/
 }
 .menu a:hover {
     color: #BB6BD9;
@@ -355,7 +358,7 @@ form {
     text-align: center;
     width: 75%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    transition: transform .2s;
 }
 .s4text h1 {
     padding-right: 20px;
@@ -365,8 +368,8 @@ form {
 .s4text a {
     color: white;
 }
-.s4text a:hover {
-    color: #BB6BD9;
+.s4text:hover {
+    transform: scale(1.15);
 }
 
 /* Footer */

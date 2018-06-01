@@ -32,6 +32,7 @@ p {
 span {
     color: #4A0D66;
 }
+
 /*Nav Bar*/
 .navbar {
     width: 100%;
@@ -39,6 +40,7 @@ span {
     justify-content: center;
     align-items: center;
 }
+
 .nav {
     width: 90%;
 }
@@ -52,47 +54,96 @@ span {
     padding: 10px 0px 10px 0px;
     font-size: 18;
 }
+
+.header a {
+    color: #4A0D66;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+.header a:hover {
+    color: #BB6BD9;
+}
+
 .logo {
     margin-right: auto;
 }
+
 .logo img {
-    width: 400px;
+    width: 370px;
+    height: auto;
 }
-.search {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
+
 .mainpage {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 1%;
 }
-.search p {
-    margin-right: 6px;
-}
+
 .mainpage, .search {
     border-radius: 1000px;
     padding-right: 30px;
     padding-left: 30px;
     height: 35px;
     border: solid #4A0D66 5px;
-
 }
+
 .mainpage, .search p {
     color: #4A0D66;
-}
-
-
-/* Menu */
-a {
-    color: white;
-    text-decoration: none;
     transition: color 0.15s ease-in-out;
 }
-a:hover {
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    width: 10%;
+}
+
+.search p {
+    margin-right: 6px;
+}
+
+#searchbar {
+    font-size: 18;
+}
+
+.search input#searchbar {
+    border: none;
+    color: #4A0D66;
+    width: 80%;
+}
+
+.search button {
+    color: #4A0D66;
+    width: 20%;
+    background: #FFFFFF;
+    border: none;
+}
+
+.search button:hover {
+    color: #BB6BD9;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+form {
+    margin: 0;
+}
+
+/* Menu */
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.13s ease-in-out;
+}
+
+.menu a:hover {
     color: #BB6BD9;
 }
 
@@ -105,6 +156,7 @@ a:hover {
     top: 0;
     z-index: 100;
 }
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -115,12 +167,14 @@ a:hover {
     height: 65px;
     width: 90%;
 }
+
 .menuitem {
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #donate {
     background-color: #BB6BD9;
     border-radius: 100px;
@@ -129,6 +183,10 @@ a:hover {
     margin-top: 5px;
     margin-bottom: 5px;
     height: 50px;
+}
+
+#donate a:hover {
+    color: #4A0D66;
 }
 
 #button {
@@ -327,7 +385,7 @@ a:hover {
 }
 .flist li {
     list-style: none;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 .bottom {
     display: flex;
@@ -346,5 +404,3 @@ a:hover {
     display: flex;
     align-items: center;
 }
-
-
