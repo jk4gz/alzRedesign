@@ -236,15 +236,8 @@ form {
     vertical-align: top;
     display: inline-block;
     height: 10%;
-    width: 11%;
+    width: 20%;
     margin-top: 65px;
-}
-
-.filler {
-    display: inline-block;
-    height: 200px;
-    width: 70%;
-    vertical-align: top;
 }
 
 .giveSub {
