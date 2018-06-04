@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Robot', sans-serif;
+    box-sizing: border-box;
 }
 h1 {
     font-weight: bold;
@@ -38,6 +39,7 @@ a {
     justify-content: flex-end;
     padding: 10px 0px 10px 0px;
     font-size: 18;
+    white-space: nowrap;
 }
 .header a {
     color: #4A0D66;
@@ -48,14 +50,15 @@ a {
     color: #BB6BD9;
 }
 
+/* Logo */
 .logo {
     margin-right: auto;
 }
 .logo img {
     width: 370px;
-    height: auto;
 }
 
+/* Main Page */
 .mainpage {
     display: flex;
     align-items: center;
@@ -74,6 +77,8 @@ a {
     color: #4A0D66;
     transition: color 0.3s ease-in-out;
 }
+
+/* Search */
 .search {
     display: flex;
     flex-direction: row;
@@ -137,6 +142,7 @@ form {
     font-weight: bold;
     height: 65px;
     width: 90%;
+    white-space: nowrap;
 }
 .menuitem {
     color: white;
@@ -359,14 +365,18 @@ form {
     width: 75%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: transform .2s;
-}
+} /*Joseph's Buttons*/
 .s4text h1 {
     padding-right: 20px;
     padding-left: 20px;
     font: 24;
+    white-space: nowrap;
 }
 .s4text a {
     color: white;
+}
+.s4text a:hover {
+    color: #BB6BD9;
 }
 .s4text:hover {
     transform: scale(1.15);
@@ -424,7 +434,455 @@ form {
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 1024px) {
-    
+
+/*1200*/
+@media only screen and (max-width: 1200px) {
+    /* Defaults */
+    .section {
+        height: 550px;
+    }
+    #s1 {
+        height: 400px;
+    }
+    img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Our Vision Text */
+    .overlay h1 {
+        font-size: 45;
+    }
+    .overlay h2 {
+        font-size: 30;
+    }
+
+    /* Specific Sections */
+
+    /* Section 1 */
+    #s1 img {
+        height: 120px;
+        width: 120px;
+    }
+
+    /* Section 2 */
+    .s2contentbox p {
+        font-size: 24;  
+    }
+    .s2c1heading img, .s2c2heading img {
+        height: 60px;
+        width: 60px;
+    }
+    .s2c1heading h2, .s2c2heading h2 {
+        font-size: 30;
+    }
+    #s2 {
+        grid-gap: 20px;
+    }
+
+    /* Section 3 */
+    .s3c {
+        font-size: 24;
+    }
+
+    /* Section 4 */
+    .s4text h1 {
+        font-size: 28;
+    }
+
+    .s4text {
+        width: 100%;
+    }
+    .s4contentbox {
+        height: 80%;
+    }
+
+
 }
-@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 890px) {
+    /* Menu */
+    .menuitem {
+        font-size: 17;
+    }
+
+    /* Banner */
+    .banner {
+        height: 400px;
+    }
+
+    /* Our Vision */
+    .overlay {
+        margin-top: 200px;
+    }
+    .overlay h1 {
+        font-size: 34;
+    }
+    .overlay h2 {
+        font-size: 22;
+    }
+
+    /* Section 4 buttons */
+    .s4text h1 {
+        font-size: 28;
+    }
+
+    /* Footers */
+    .bottom {
+        font-size: 14;
+    }
+
+    .bottom p {
+        margin-left: 2%;
+    }
+}
+
+/* 780 */
+@media only screen and (max-width: 780px) {
+    /* Defaults */
+    .section {
+        height: 500px;
+    }
+    #s1 {
+        height: 400px;
+    }
+
+    /* Nav */
+    #searchbar {
+        font-size: 15;
+    }
+    .mainpage {
+        font-size: 15;
+    }
+
+    /* Logo */
+    .logo img {
+        width: 250px;
+        height: auto;
+    }
+
+    /* Menu */
+    .menuitem {
+        font-size: 15;
+    }
+
+    #donate {
+        border-radius: 100px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        height: 45px;
+        width: 1%;
+    }
+
+    /* Banner */
+    .banner {
+        height: 350px;
+    }
+
+    /* Our Vision */
+    .overlay {
+        margin-top: 175px;
+    }
+    .overlay h1 {
+        font-size: 36;
+    }
+    .overlay h2 {
+        font-size: 24;
+    }
+
+    /* Section Head Text*/
+    .section_head {
+        font-size: 14;
+    }
+
+    /* Section 1 */
+    #s1 img {
+        height: 100px;
+        width: 100px;
+    }
+
+    #s1 h1 {
+        font-size: 28;
+    }
+
+    #s1 h2 {
+        font-size: 22;
+    }
+
+    /* Section 2 */
+    #s1 {
+        height: 325px
+    }
+    .s2contentbox p {
+        font-size: 20;  
+    }
+    .s2c1heading img, .s2c2heading img {
+        height: 50px;
+        width: 50px;
+    }
+    .s2c1heading h2, .s2c2heading h2 {
+        font-size: 26;
+    }
+    .s2c1heading, .s2c2heading {
+        font-size: 26;
+    }
+
+    /* Section 3 */
+    .s3c {
+        font-size: 20;
+    }
+
+    /* Section 4 */
+    .s4text h1 {
+        font-size: 18;
+    }
+    .s4text {
+        width: 90%;
+    }
+    .s4contentbox {
+        height: 90%;
+    }
+
+    /* Footer */
+    .ftitle {
+        font-size: 14;
+    }
+
+    .flist li {
+        font-size: 12;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    /* Header */
+    .logo {
+        margin: 0;
+        width: 20%:
+    }
+
+    .logo img {
+        width: 90%;
+    }
+    .mainpage, #searchbar {
+        font-size: 12;
+    }
+    .mainpage, .search {
+        width: 20%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    /* Menu */
+    .menuitem {
+        font-size: 12;
+    }
+    #donate {
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    /* Our Vision Text */
+    .overlay h1 {
+        font-size: 24;
+    }
+    .overlay h2 {
+        font-size: 18;
+    }
+
+    /* Sections */
+    .section {
+        height: 350;
+    }
+    /* Section 1 */
+    #s1 {
+        height: 250px;
+    }
+    #s1 h1 {
+        font-size: 20;
+    }
+
+    #s1 h2 {
+        font-size: 15;
+    }
+    #s1 img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Section 2 */
+    .section_head img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .section_head {
+        font-size: 10;
+    }
+    .s2contentbox h2{
+        font-size: 18;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .s2contentbox p {
+        font-size: 14;
+    }
+    .s2c1heading img, .s2c2heading img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Section 3 */
+    .s3contentbox p {
+        font-size: 14;
+    }
+
+    /* Section 4 */
+    #s4 h1 {
+        font-size: 12;
+    }
+    .s4pic img {
+        width: 50px;
+        height: 50px;
+    }
+    .s4content {
+        width: 40%;
+    }
+
+    /* Footer */
+    .footer {
+        height: 100px;
+    }
+    .ftitle {
+        font-size: 10;
+    }
+    .flist li{
+        font-size: 8;
+    }
+    .bottom p {
+        font-size: 8;
+    }
+    .bottom img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* Section 4 */
+    #s4 h1 {
+        font-size: 10;
+    }
+}
+
+/* 425px */
+@media only screen and (max-width: 425px) {
+
+    /* Header */
+    .mainpage {
+        display: none;
+    }
+    .search {
+        width: 50%;
+    }
+
+    .menuitem {
+        font-size: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+
+    .overlay {
+        margin-top: 100px;
+    }
+
+    .overlay h1 {
+        font-size: 20;
+    }
+
+    .overlay h2 {
+        font-size: 12;
+    }
+
+    /* Sections */
+    .section {
+        height: 250px;
+    }
+
+    /* Section 1 */
+    #s1 h1 {
+        font-size: 16;
+    }
+
+    #s1 h2 {
+        font-size: 12;
+    }
+
+    #s1 img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Section 2 */
+    #s2 h1 {
+        font-size: 16;
+    }
+
+    #s2 h2 {
+        font-size: 12;
+    }
+
+    #s2 img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #s2 p {
+        font-size: 10;
+    }
+
+    /* Section 3 */
+    #s3 h1 {
+        font-size: 16;
+    }
+
+    #s3 p {
+        font-size: 10;
+    }
+
+    #s3 .section_head img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Section 4 */
+    #s4 {
+        height: 500px;
+    }
+    .s4content {
+        width: 50%;
+    }
+
+    #s4 img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Footer */
+    .footer {
+        display: none;
+    }
+}
+
+/* 375 */
+@media only screen and (max-width: 375px) {
+    /* Section 4 */
+    #s4 h1 {
+        font-size: 8;
+    }
+}
+
