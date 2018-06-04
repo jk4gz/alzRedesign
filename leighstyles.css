@@ -71,6 +71,7 @@ header. {
     color: #4A0D66;
     transition: color 0.3s ease-in-out;
 }
+/* Search */
 .search {
     display: flex;
     flex-direction: row;
@@ -105,6 +106,7 @@ header. {
 form {
     margin: 0;
 }
+
 
 
 /* Menu */
