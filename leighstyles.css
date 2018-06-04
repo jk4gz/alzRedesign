@@ -164,7 +164,8 @@ form {
 .about {
 	background-color: #A685A8;
 	width: 100%;
-	height: 1000px;
+	height: auto;
+	padding-bottom: 100px;
 }
 .title {
 	display: flex;
@@ -214,7 +215,7 @@ form {
 .aboutlist {
     list-style-type: none;
     position: absolute;
-    top: 600px;
+    top: 75%;
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -239,15 +240,18 @@ form {
 	width: 100%;
 	height: 1500px;
 }
+.communitycontainer {
+	width: 86%;
+	margin: 0 auto;
+}
 .localnews {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	width: 90%;
 	height: 390px;
 	margin: 0 auto;
 	background-color: white;
-		margin: 2.5% auto;
+	margin: 2.5% auto;
 	}
 .communityimage1 {
 	width: 55%;
@@ -283,6 +287,7 @@ h3 {
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	margin-bottom: 0;
 	padding-bottom: 0;
+	padding: 10px;
 }
 /*APPLIES THROUGHOUT COMMUNITY AND BOTTOM COMMNUNITY*/
 .communityul {
@@ -308,7 +313,7 @@ h3 {
 	position: relative;
 	display: flex;
 	flex-wrap: flex;
-	width: 90%;
+	width: 100%;
 	max-height: 390px;
 }
 .mostvisitedtext {
@@ -331,7 +336,6 @@ h3 {
 	padding: 20px;
 }
 .communityimage2 {
-	background: url("images/researchlab.jpg");
 	width: 55%;
 	display: flex;
 	flex-wrap: wrap;
@@ -343,13 +347,13 @@ h3 {
 	display: flex;
 	flex-wrap: wrap;
 	width: 500px;
-	height: 500px;
+	height: auto;
 }
 /*BOTTOM COMMUNITY SECTION*/
 .community2 {
 	background-color: #A685A8;
 	width: 100%;
-	height: 1100px;
+	height: auto;
 	padding-top: 50px;
 }
 .square-container {
@@ -370,9 +374,10 @@ h3 {
 	background-color: white;
 	  position: relative;
 	  flex-basis: calc(45%);
-	  margin: 15px;
+	  margin: 25px;
 	  border: none;
 	  box-sizing: border-box;
+	  padding-right:;
 }
 .square::before {
   content: '';
@@ -423,11 +428,19 @@ h3 {
 	display: flex;
 }
 .bottomtitletext {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 .advocatetext {
 	font-size: 22px;
 	padding: 0;
+}
+.advocatetext1 {
+	padding: 20px;
+}
+@media screen and (max-width: 1005px) {
+ .advocatetext {
+ 	font-size: 16px;
+ }
 }
 /* Footer */
 .footer {
